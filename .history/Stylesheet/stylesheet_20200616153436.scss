@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'menu';
+@import 'cards';
+@import 'footer';
+
+body{
+    background-image: $bg-Img;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

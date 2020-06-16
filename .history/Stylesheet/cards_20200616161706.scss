@@ -1,0 +1,31 @@
+@import 'variables';
+
+.card {
+    background-color: $dark;
+
+    .card-rating {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px;
+        span {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding: 5px;
+            border: 1px solid $golden;
+            color: $golden;
+            background-color: $dark;
+
+        }
+    }
+    .card-body {
+        *{
+            color: $light;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import 'variables';
+
+.filterMenu {
+    background-color: $transparent-bg;
+    .menu {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+}

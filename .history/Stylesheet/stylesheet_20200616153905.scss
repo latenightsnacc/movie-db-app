@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'menu';
+@import 'cards';
+@import 'footer';
+
+body{
+    background-image: url("bg.jpg");
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+.main {
+    margin:0px 5%;
+}

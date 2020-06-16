@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--UI kit-->
+    <link rel="stylesheet" href="uikit-3.4.6/css/uikit.min.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="Stylesheet/stylesheet.css">
+    <title>Movie App</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="pt-2 container">
+        <div class="navbar-translate d-flex align-content-center">
+            <a aria-current="page" class="active" href="/"><i class="fas fa-video nav-logo" aria-hidden="true"></i> </a><a aria-current="page" class="nav-app-title active" href="/">MovieBrowser</a>
+            <div class="d-flex flex-column w-100">
+                <div class="position-relative">
+                    <input name="search" placeholder="Search by movie title" type="text" class="search-input form-control" value=""><i class="fas fa-search search-btn" aria-hidden="true"></i></div></div>
+                    <button aria-expanded="false" class="navbar-toggler navbar-toggler"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button></div><div class="justify-content-end collapse navbar-collapse"><ul class="navbar-nav"><li class="nav-item"><a aria-current="page" class="nav-link active" href="/"><i class="far fa-list-alt" aria-hidden="true"></i> Movies</a></li><li class="nav-item"><a class="nav-link" href="/watchlist"><i class="far fa-bookmark" aria-hidden="true"></i> My watchlist</a></li><li class="nav-item"><a href="https://github.com/pylnata/movie-browser-app" target="_blank" title="Star on GitHub" class="nav-link"><i class="fab fa-github" aria-hidden="true"></i> <p class="d-lg-none">GitHub</p></a></li><li class="nav-item"><a href="/logout"><button class="btn-round btn-sign btn btn-secondary">SIGN OUT</button></a></li></ul></div></div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="logo">
+            <a href="index.html">Movie Browser</a>
+        </div>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    <header>
+        
+        <div class="header">
+            
+            <input type="text" placeholder="Search" />
+            <a href="#">My Wishlist</a>
+            <a href="#">Sign in</a>
+        </div>
+    </header>
+    <main>
+        <!--Hero Section-->
+        <section class="hero">
+            <div uk-slideshow="autoplay: true; autoplay-interval: 3000; pause-on-hover: true; animation: fade;" uk-scrollspy="cls:uk-animation-fade; repeat: true; delay: 300">
+                <ul class="uk-slideshow-items" uk-height-viewport="min-height: 300">
+                    <li>
+                        <img src="images/bright.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="images/eye.jpg" alt="" uk-cover>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Main Body-->
+        <div class="main">
+
+            <!--Filter Menu-->
+            <div class="container">
+                <div class="filterMenu">
+                    <ul class="menuList">
+                        <li>
+                            <a href="#" class="active">Popular</a>
+                        </li>
+                        <li>
+                            <a href="#">Now Playing</a>
+                        </li>
+                        <li>
+                            <a href="#">Top Rated</a>
+                        </li>
+                        <li>
+                            <a href="#">Upcoming</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           
+            <!--Movie Card List Row 1-->
+            <div class="container">
+                <div class="row">
+                    <!--Cards-->
+                    <div class="col">
+                        <a href="#">
+                            <div class="card fadeIn animated">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+
+             <!--Movie Card List Row 2-->
+            <div class="container">
+                <div class="row">
+                    <!--Cards-->
+                    <div class="col">
+                        <a href="#">
+                            <div class="card fadeIn animated">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <!--Movie Card List Row 3-->
+             <div class="container">
+                <div class="row">
+                    <!--Cards-->
+                    <div class="col">
+                        <a href="#">
+                            <div class="card fadeIn animated">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+             <!--Movie Card List Row 4-->
+             <div class="container">
+                <div class="row">
+                    <!--Cards-->
+                    <div class="col">
+                        <a href="#">
+                            <div class="card fadeIn animated">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/movieImg2.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-rating">8.7</span>
+                                    <div class="movie-content">
+                                        <a class="wishlist-btn">
+                                            <i class="fa fa-bookmark"></i>
+                                        </a> 
+                                        <div class="movie-title">Wreck-it Ralph</div>
+                                        <p>Animation, Comedy, Family</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Scripts-->
+    <script src="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="uikit-3.4.6/js/uikit.min.js"></script>
+</body>
+</html>

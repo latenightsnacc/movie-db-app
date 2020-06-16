@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'animations';
+@import 'header';
+@import 'hero';
+@import 'menu';
+@import 'cards';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-image: $bg-Img;
+    overflow-x: hidden;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    width: 100vw;
+}
+.row {
+    margin: 20px 0px;
+}

@@ -1,0 +1,23 @@
+@import 'variables';
+
+.card {
+    background-color: $dark;
+
+    .card-rating {
+        span {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: 1px solid $golden;
+            color: $golden;
+            background-color: $dark;
+
+        }
+    }
+
+    .card-body {
+        *{
+            color: $light;
+        }
+    }
+}

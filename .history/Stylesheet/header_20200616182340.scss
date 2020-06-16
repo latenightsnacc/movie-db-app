@@ -1,0 +1,33 @@
+@import 'variables';
+
+.header {
+    .navbar, .navbar-dark {
+        width: 100%;
+        background-color: $dark !important;
+    }
+    .form-control {
+        max-width: 300px;
+        outline: none;
+        border: none;
+    }
+    a.nav-link {
+        display: flex;
+        align-items: center;
+        margin-left: 12px;
+        color: $golden !important;
+        text-transform: uppercase;
+        span {
+            padding-left: 10px;
+            color: $light;
+        }
+    }
+    a.nav-btn {
+        border: 1px solid $light;
+        color $dark !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

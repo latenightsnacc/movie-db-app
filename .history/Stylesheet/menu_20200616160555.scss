@@ -1,0 +1,35 @@
+@import 'variables';
+
+.filterMenu {
+    background-color: $transparent-bg;
+
+    .menuList {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 20px 0px;
+
+        li {
+            a {
+                color: $light;
+                font-family: $font;
+                font-size: 20px;
+                border: 1px solid $light;
+                padding: 10px;
+                border-radius: 3px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                &.active{
+                    color: $golden;
+                    border: 1px solid $golden;
+                }
+            }
+
+        }
+
+    }
+
+}

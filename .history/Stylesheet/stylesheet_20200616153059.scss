@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'menu';
+@import 'cards';
+@import 'footer';
+
+body{
+    background: $bg-Img;
+}

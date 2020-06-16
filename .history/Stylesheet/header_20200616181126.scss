@@ -1,0 +1,13 @@
+@import 'variables';
+
+.header {
+    .form-control {
+        max-width: 300px;
+        outline: none;
+        border: none;
+    }
+    a.nav-link {
+        display: flex;
+        align-items: center;
+    }
+}

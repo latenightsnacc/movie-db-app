@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+.filterMenu {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.filterMenu .menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0px;
+}
+
+.filterMenu .menuList li a {
+  color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 20px;
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.filterMenu .menuList li a:hover {
+  text-decoration: none;
+}
+
+.filterMenu .menuList li a.active {
+  color: #DAA520;
+  border: 1px solid #DAA520;
+  font-weight: 500;
+}
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'menu';
+@import 'cards';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    background-image: $bg-Img;
+    overflow-x: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main {
+    margin:0px 5%;
+}
+
+.row {
+    margin: 20px 0px;
+}
