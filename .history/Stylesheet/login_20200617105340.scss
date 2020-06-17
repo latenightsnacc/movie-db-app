@@ -1,0 +1,102 @@
+@import 'variables';
+
+.form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    form {
+        padding: 10px;
+        background-color: $dark;
+        box-shadow: $box-shadow;
+        border: 2px solid $dark;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 350px;
+        width: 350px;
+
+        .form-title {
+            font-size: 20px;
+            font-family: $font;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: $light;
+            text-align: center;
+        }
+        
+        .form-row {
+            margin: 15px 0px;
+
+            .form-control, .input-group-text {
+                background-color: $transparent-bg;
+                border: 0;
+                border-bottom: 2px solid $light;
+                border-radius: 0;
+                color: $light;
+                padding: 2px 5px;
+
+                &:focus-within {
+                    border: 0;
+                    outline: none;
+                    outline-color: $transparent-bg !important;
+                    border-radius: 0;
+                }
+            }
+            .input-group-text {
+                color: $golden;
+            }
+
+        }
+        .login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            input[type="submit"]{
+                background-color: $light;
+                color: $dark;
+                width: 100%;
+                border: 2px solid $light;
+                font-weight: 700;
+                font-family: $font;
+                padding: 2px;
+                font-size: 18px;
+            }
+            .login-icons {
+                color: $light;
+                padding-top: 7px;
+
+                a{
+                    .fa {
+                        padding-left: 7px;
+                        color: $golden;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                        transform: scale(1.1);
+                    }
+                }
+
+                
+            }
+
+            p {
+                margin-top: 0;
+                padding-top: 5px;
+                color: $light;
+                    a{
+                        color: $golden;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+            }
+        }
+    }
+}

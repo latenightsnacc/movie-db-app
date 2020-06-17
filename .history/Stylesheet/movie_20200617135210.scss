@@ -1,0 +1,50 @@
+@import 'variables';
+
+.movie {
+    margin-top: 130px;
+    background-color: rgba(0,0,0,.5);
+    color: #dee2e6;
+    position: relative;
+    display: grid;
+    grid-template:
+        "image info"
+        "image stat";
+    justify-content: start;
+    grid-template-columns: 300px 1fr;
+}
+
+.movie__info {
+    grid-area: info;
+}
+.movie__stat {
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    color: #adb5bd;
+    grid-area: stat;
+    align-self: end;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+.d-flex {
+    display: flex!important;
+}
+#movieBg {
+    .card {
+        padding: 0;
+        img.card-img {
+            padding: 0;
+            margin: 0;
+            width:250px;
+            height: 350px;
+        }
+        .card-body {
+            background-color: $transparent-bg !important;
+        }
+    }
+}

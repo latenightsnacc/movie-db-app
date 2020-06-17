@@ -1,0 +1,97 @@
+@import 'variables';
+
+.header {
+    .nav{
+        width: 100%;
+        background-color: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        
+        .navbar-items {
+            display: flex; 
+
+            a.item{
+                display: flex;
+                align-items: center;
+                margin-left: 12px;
+                color: $golden !important;
+                text-transform: uppercase;
+
+                span.nav-icon{
+                    color: $light;
+                    
+                    .fa {
+                        color: $light !important;
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $light;
+                        border-radius: 50%;
+                    }
+                }
+                span.menu-text {
+                    color: $golden !important;
+                    padding-left: 10px;
+                }
+
+                &:hover {
+                    text-decoration: none !important;
+                    span.nav-icon{
+                        color: $golden;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .header {
+        .nav{
+            justify-content: space-between;
+            padding: 20px 0px;
+            
+            .navbar-items {
+                display: flex; 
+    
+                a.item{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 12px;
+                    color: $golden !important;
+    
+                    span.nav-icon{
+                        color: $golden;
+                        .fa {
+                            color: $golden !important;
+                            height: 40px;
+                            width: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 1px solid $light;
+                            border-radius: 50%;
+                        }
+
+                        &:hover {
+                            transform: scale(1.2);
+                            .fa {
+                                border: 1px solid $golden;
+                            }
+                        }
+                    }
+                    span.menu-text {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    
+    }
+}

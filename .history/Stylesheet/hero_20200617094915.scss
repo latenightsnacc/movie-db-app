@@ -1,0 +1,39 @@
+@import 'variables';
+
+.hero-slide {
+    position: relative;
+
+    .dark-img {
+        background-image:  url("../images/bright.jpg");
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+    }
+    .movie-features {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+        .title {
+            color: $light;
+            font-weight: 700;
+            font-family: $font;
+            font-size: 70px;
+            line-height: 80px;
+        }
+        dd {
+            color: $light;
+            line-height: 20px;
+            font-family: $font;
+            font-weight: 300;
+        }
+        .stars {
+            *{
+                color: $golden;
+                font-size: 30px;
+                box-shadow: $btn-shadow;
+            }
+        }
+    }
+
+}

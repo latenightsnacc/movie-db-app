@@ -1,0 +1,28 @@
+@import 'variables';
+
+.movie {
+    margin-top: 130px;
+    background-color: rgba(0,0,0,.5);
+    color: #dee2e6;
+    position: relative;
+    display: grid;
+    grid-template:
+        "image info"
+        "image stat";
+    justify-content: start;
+    grid-template-columns: 300px 1fr;
+}
+#movieBg {
+    .card {
+        padding: 0;
+        img.card-img {
+            padding: 0;
+            margin: 0;
+            width:250px;
+            height: 350px;
+        }
+        .card-body {
+            background-color: $transparent-bg !important;
+        }
+    }
+}

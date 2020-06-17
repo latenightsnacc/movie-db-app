@@ -1,0 +1,44 @@
+@import 'variables';
+
+.form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // min-width: 300px;
+    // max-width: 500px;
+
+    form {
+        padding: 10px;
+        background-color: $dark;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        .form-title {
+            font-size: 20px;
+            font-family: $font;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: $light;
+            text-align: center;
+        }
+        .form-row {
+            margin-bottom: 2px;
+
+            .form-control, .input-group-text {
+                background-color: $transparent-bg;
+                border: 0;
+                border-bottom: 2px solid $light;
+
+                &:focus-within {
+                    border: 0;
+                    outline: none;
+                    outline-color: $transparent-bg !important;
+                }
+            }
+            .input-group-text {
+                color: $golden;
+            }
+        }
+    }
+}

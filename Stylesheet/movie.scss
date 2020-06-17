@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'animations';
+
+.movie {
+    margin-top: 130px;
+    background-color: rgba(0,0,0,.5);
+    color: #dee2e6;
+    position: relative;
+    display: grid;
+    grid-template:
+        "image info"
+        "image stat";
+    justify-content: start;
+    grid-template-columns: 300px 1fr;
+
+    h2{
+        color: $light;
+        line-height: 30px;
+        margin-bottom: 0 !important;
+    }
+
+}
+.movie__info {
+    grid-area: info;
+}
+.movie__stat {
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    color: #adb5bd;
+    grid-area: stat;
+    align-self: end;
+}
+.btn-secondary{
+    background-color: $golden !important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.movie__tagline {
+    -webkit-animation: animateOpacity 2s ease;
+    animation: animateOpacity 2s ease;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: $light;
+}
+.actors {
+    background-color: $transparent-bg;
+    background-size: cover;
+}
+@media screen and (max-width: 767px){
+    .movie {
+        display: grid;
+        grid-template:
+            "image"
+            "info"
+            "stat";
+        justify-items: center;
+    }
+}
+
+

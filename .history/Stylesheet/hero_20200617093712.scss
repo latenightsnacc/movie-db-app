@@ -1,0 +1,43 @@
+@import 'variables';
+
+.hero-slide {
+    position: relative;
+
+    .dark-img {
+        background-image: url("../images/over.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .m_overlay {
+        z-index: 1;
+    }
+    .movie-features {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+        .title {
+            color: $light;
+            font-weight: 700;
+            font-family: $font;
+            font-size: 70px;
+            line-height: 80px;
+        }
+        dd {
+            color: $light;
+            line-height: 20px;
+            font-family: $font;
+            font-weight: 300;
+        }
+        .stars {
+            *{
+                color: $golden;
+                font-size: 30px;
+                box-shadow: $btn-shadow;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,9 @@
+@import 'variables';
+
+#movieBg {
+    .card {
+        .card-body {
+            background-color: $transparent-bg;
+        }
+    }
+}

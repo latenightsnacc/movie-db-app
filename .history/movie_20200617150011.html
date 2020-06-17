@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--UI kit-->
+    <link rel="stylesheet" href="uikit-3.4.6/css/uikit.min.css">
+    <!--Custom css-->
+    <link rel="stylesheet" href="Stylesheet/stylesheet.css">
+    <title>Movie App</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!--Logo-->
+                <div class="logo">
+                    <a class="navbar-brand" href="index.html">Movie App</a>
+                </div>
+                <!--Navbar Items-->
+                <div class="navbar-items">
+                    <a class="item" href="index.html">
+                        <span class="nav-icon">
+                            <i class="fa fa-list"></i>
+                        </span>
+                        <span class="menu-text">Movies</span>    
+                    </a>
+                    <a class= "item" href="wishlist.html">
+                        <span class="nav-icon">
+                            <i class="fa fa-bookmark"></i>
+                        </span>
+                        <span class="menu-text">Wishlist</span>    
+                    </a>
+                    <a class="item active" href="login.html">
+                        <span class="nav-icon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <span class="menu-text">Login</span> 
+                    </a>
+                </div>
+            </nav>
+        </div>
+        
+    </header>
+    <!--Main Body-->
+    <main id="movieBg">
+        <!--Movie card-->
+        <div class="container">
+            <div class="movie">
+                <img src="https://image.tmdb.org/t/p/w300/uCDcQbfIKY4oTPd6tbghloFm7Gi.jpg" alt="The High Note" class="movie__img">
+                <div class="movie__info d-flex flex-column justify-content-between p-3 align-items-start">
+                    <h2>The High Note</h2>
+                    <h6 class="movie__tagline">You've got to start at the bottom before you take it from the top.</h6>
+                    <div class="movie__control">
+                        <div title="Rating" class="movie__rating">8.1</div>
+                        <div class="modal" style="transform: translateY(-100vh); opacity: 0;"></div>
+                        <button type="button" id="watchlist-btn" class="movie__like mr-2 undefined btn btn-secondary">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i> Add to my WatchList </button>
+                    </div>
+                    <p class="movie__overview">Set in the dazzling world of the LA music scene comes the story of Grace Davis, a superstar whose talent, and ego, have reached unbelievable heights.
+                     Maggie is Grace’s overworked personal assistant who’s stuck running errands, but still aspires to her childhood dream of becoming a music producer.
+                    When Grace’s manager presents her with a choice that could alter the course of her career, Maggie and Grace come up with a plan that could change their lives forever.
+                    </p>
+                    <div>
+                        <span class="mr-2">Genres:</span> 
+                        <span class="mb-1 badge badge-warning">Romance</span>
+                        <span class="mb-1 badge badge-warning">Comedy</span>
+                        <span class="mb-1 badge badge-warning">Music</span>
+                        <span class="mb-1 badge badge-warning">Drama</span>
+                    </div>
+                </div>
+                <div class="movie__stat d-flex justify-content-between align-items-center"><div>
+                <i class="fa fa-clock-o movie__icon" aria-hidden="true"></i>Release date: 9.6.2020</div>
+                <div><i class="fa fa-history movie__icon" aria-hidden="true"></i>Duration:  1h 53m</div>
+                <div><i class="fa fa-money movie__icon" aria-hidden="true"></i>Budget:  $0</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="movie-cast">
+                <div class="d-flex justify-content-between align-align-items-center">
+                    <h3 class="list-title list-title-dark mb-4">Actors</h3>
+                    <div class="custom-control custom-switch pr-5 info">
+                        <input type="checkbox" class="custom-control-input info" id="show-all">
+                        <label class="custom-control-label" for="show-all">Show all</label>
+                    </div>
+                </div>
+                <div class="movie-cast__list d-flex flex-wrap justify-content-md-center justify-content-lg-start justify-content-center align-items-stretch"><div class="movie-cast__item"><img class="movie-cast__img" alt="Dakota Johnson" title="Dakota Johnson" src="https://image.tmdb.org/t/p/w185/i2W5o1XgcZoPaGOsNma7ZzWHRbY.jpg"><div class="movie-cast__info">Dakota Johnson <br><span class="small">Maggie Sherwoode</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Tracee Ellis Ross" title="Tracee Ellis Ross" src="https://image.tmdb.org/t/p/w185/fSkDX72vTLVR6wKQ03YtCsXK6HB.jpg"><div class="movie-cast__info">Tracee Ellis Ross <br><span class="small">Grace Davis</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Kelvin Harrison Jr." title="Kelvin Harrison Jr." src="https://image.tmdb.org/t/p/w185/uRViX11fZQGmO9p91ZH7QVh2l5y.jpg"><div class="movie-cast__info">Kelvin Harrison Jr. <br><span class="small">David Cliff</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Bill Pullman" title="Bill Pullman" src="https://image.tmdb.org/t/p/w185/6VRnvxHeXPdN0hurWbQPNIHqR1n.jpg"><div class="movie-cast__info">Bill Pullman <br><span class="small">Max</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Zoe Chao" title="Zoe Chao" src="https://image.tmdb.org/t/p/w185/4QZrFVx3VUmiII8iI5rGLiElc9m.jpg"><div class="movie-cast__info">Zoe Chao <br><span class="small">Katie</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="June Diane Raphael" title="June Diane Raphael" src="https://image.tmdb.org/t/p/w185/8vLYprlODDGjL3twSKIZ4pwvvKQ.jpg"><div class="movie-cast__info">June Diane Raphael <br><span class="small">Gail</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Eugene Cordero" title="Eugene Cordero" src="https://image.tmdb.org/t/p/w185/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"><div class="movie-cast__info">Eugene Cordero <br><span class="small">Seth</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Marc Evan Jackson" title="Marc Evan Jackson" src="https://image.tmdb.org/t/p/w185/4TWP0nlhkxkZ5XzzZuz3RCoZjFX.jpg"><div class="movie-cast__info">Marc Evan Jackson <br><span class="small">Alec</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Eddie Izzard" title="Eddie Izzard" src="https://image.tmdb.org/t/p/w185/jPsZdu9DzGudytybdzjXAm77Q0r.jpg"><div class="movie-cast__info">Eddie Izzard <br><span class="small">Dan Deakins</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Ice Cube" title="Ice Cube" src="https://image.tmdb.org/t/p/w185/9EghwabQ1wIQT4oN69qtPlzqGn4.jpg"><div class="movie-cast__info">Ice Cube <br><span class="small">Jack Robertson</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Jonathan Freeman" title="Jonathan Freeman" src="https://image.tmdb.org/t/p/w185/auYxo6kO2FTnVUxcTtuzioa9IKe.jpg"><div class="movie-cast__info">Jonathan Freeman <br><span class="small">Martin</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Bianca Lopez" title="Bianca Lopez" src="https://image.tmdb.org/t/p/w185/mfiMebY1XSnFEDplwN3aExUThEO.jpg"><div class="movie-cast__info">Bianca Lopez <br><span class="small">Juice Store Employee</span></div></div><div class="movie-cast__item"><div class="movie-cast__nophoto">NO PHOTO</div><div class="movie-cast__info">Tiffany Elle <br><span class="small">Pharmacist</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Diplo" title="Diplo" src="https://image.tmdb.org/t/p/w185/snohpneYnVs24c6EYP54784bwh6.jpg"><div class="movie-cast__info">Diplo <br><span class="small">Richie Williams</span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Sandra Rosko" title="Sandra Rosko" src="https://image.tmdb.org/t/p/w185/rYJ185ACbXGAsGbixXRe6i7t2hX.jpg"><div class="movie-cast__info">Sandra Rosko <br><span class="small"></span></div></div><div class="movie-cast__item"><img class="movie-cast__img" alt="Deniz Akdeniz" title="Deniz Akdeniz" src="https://image.tmdb.org/t/p/w185/eFQjuNQmt21VqVSvhQiS7qZ4eJC.jpg"><div class="movie-cast__info">Deniz Akdeniz <br><span class="small">Spencer</span></div></div></div></div>
+        </div>
+    </main>
+    <!--Scripts-->
+    <script src="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="uikit-3.4.6/js/uikit.min.js"></script>
+</body>
+</html>

@@ -1,2 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;700&display=swap");
+.hero-slide {
+  position: relative;
+}
+
+.hero-slide .dark-img {
+  background-image: url("/images/bright.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-slide img {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5));
+}
+
+.hero-slide .movie-features {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.hero-slide .movie-features .title {
+  color: #fff;
+  font-weight: 700;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 80px;
+  line-height: 100px;
+}
+
+.hero-slide .movie-features dd {
+  color: #fff;
+  line-height: 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+}
+
+.hero-slide .movie-features .stars * {
+  color: #DAA520;
+  font-size: 50px;
+  line-height: 60px;
+  text-shadow: 0 5px 10px rgba(218, 165, 32, 0.4);
+}
 /*# sourceMappingURL=hero.css.map */

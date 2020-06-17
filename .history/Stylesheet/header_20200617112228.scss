@@ -1,0 +1,79 @@
+@import 'variables';
+
+.header {
+    .nav{
+        width: 100%;
+        background-color: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0px;
+        
+        .nav-items {
+            display: flex; 
+
+            a{
+                display: flex;
+                align-items: center;
+                margin-left: 12px;
+                color: $golden !important;
+                text-transform: uppercase;
+                span{
+                    color: $light !important;
+                    padding-left: 10px;
+                    .fa {
+                        color: $light !important;
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $light;
+                        border-radius: 50%;
+                    }
+                }
+                .menu-text {
+                    color: $golden;
+                }
+            }
+        }
+    }
+    
+    
+    a.nav-btn {
+        border: 1px solid $light;
+        color: $dark !important;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        width: 80px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: $light;
+    }
+}
+
+@media screen and (max-width: 600px){
+    a.nav-link {
+        span { 
+            color: $golden;
+            .fa {
+                padding-left: 10px;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $light;
+                border-radius: 50%;
+                color: $golden;
+
+            }
+        }
+        .menu-text {
+            display: none;
+        }
+    }
+}

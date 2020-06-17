@@ -1,0 +1,18 @@
+@import 'variables';
+
+.form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    max-width: 500px;
+
+    form {
+        padding: 5px;
+        background-color: $transparent-bg;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

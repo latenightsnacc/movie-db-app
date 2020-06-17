@@ -1,0 +1,24 @@
+@import 'variables';
+
+.hero-slide {
+    position: relative;
+
+    .movie-features {
+        position: absolute;
+        top: 40%;
+        left: 20%;
+
+        .title {
+            color: $light;
+            font-weight: $fontHeavy;
+            font-family: $font;
+        }
+        dd {
+            color: $light;
+            line-height: 20px;
+            font-family: $font;
+            font-weight: 300;
+        }
+    }
+
+}

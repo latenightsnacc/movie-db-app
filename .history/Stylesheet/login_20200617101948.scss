@@ -1,0 +1,10 @@
+@import 'variables';
+
+.form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    max-width: 500px;
+}

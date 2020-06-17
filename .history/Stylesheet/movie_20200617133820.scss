@@ -1,0 +1,16 @@
+@import 'variables';
+
+#movieBg {
+    .card {
+        padding: 0;
+        img.card-img {
+            padding: 0;
+            margin: 0;
+            width:250px;
+            height: 350px;
+        }
+        .card-body {
+            background-color: $transparent-bg !important;
+        }
+    }
+}
