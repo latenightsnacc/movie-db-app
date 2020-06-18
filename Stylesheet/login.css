@@ -18,6 +18,7 @@
   -webkit-box-shadow: 0 5px 10px rgba(218, 165, 32, 0.4);
           box-shadow: 0 5px 10px rgba(218, 165, 32, 0.4);
   border: 2px solid black;
+  border-top: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +29,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 350px;
+  height: 400px;
   width: 350px;
 }
 

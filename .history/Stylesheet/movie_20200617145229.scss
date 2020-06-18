@@ -20,10 +20,10 @@
     }
 
 }
-.movie__info {
+.movie-info {
     grid-area: info;
 }
-.movie__stat {
+.movie-stat {
     background-color: rgba(0,0,0,.8);
     width: 100%;
     padding: 15px;
@@ -44,7 +44,7 @@
 .d-flex {
     display: flex!important;
 }
-.movie__tagline {
+.movie-tagline {
     -webkit-animation: animateOpacity 2s ease;
     animation: animateOpacity 2s ease;
     margin-bottom: 15px;

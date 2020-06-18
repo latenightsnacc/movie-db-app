@@ -13,10 +13,10 @@
     grid-template-columns: 300px 1fr;
 }
 
-.movie__info {
+.movie-info {
     grid-area: info;
 }
-.movie__stat {
+.movie-stat {
     background-color: rgba(0,0,0,.8);
     width: 100%;
     padding: 15px;
