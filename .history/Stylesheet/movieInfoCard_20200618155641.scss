@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'animations';
-
 .movie {
     margin-top: 130px;
     background-color: rgba(0,0,0,.5);
@@ -14,9 +13,9 @@
     grid-template-columns: 300px 1fr;
     position: relative;
 
-    h2{
-        color: $light;
-        line-height: 30px;
+    .movie-title{
+        color: $golden;
+        line-height: 25px;
         margin-bottom: 0 !important;
     }
 
@@ -59,18 +58,21 @@
         }
     }
 
-}
-
-
-.btn-secondary{
-    background-color: $golden !important;
-    border: 2px solid $golden !important;
-    outline-color: $golden !important;
-
-    &:focus {
+    .btn-secondary{
+        background-color: $golden !important;
+        border: 2px solid $golden !important;
         outline-color: $golden !important;
+        margin-bottom: 7px;
+    
+        &:focus {
+            outline-color: $golden !important;
+        }
     }
+
 }
+
+
+
 .align-items-center {
     align-items: center!important;
 }
@@ -81,26 +83,10 @@
     display: flex!important;
 }
 
-.movie-cast{
-    margin: 20px 0px;
-    background-color: $dark;
-    padding: 30px 0 0 30px;
-    color: $light;
-    h3 {
-        color: light !important;
-    }
-}
-.movie-cast-item {
-    margin-bottom: 30px;
-    margin-right: 30px;
-    max-width: 150px;
-    text-align: center;
-    color: $light;
-}
+
 @media screen and (max-width: 1024px){
     .movie-rating {
-        position: absolute;
-        top: 30%;
+        top: 26% !important;
         right: 10%;
     }
 }
@@ -115,4 +101,21 @@
     }
 }
 
+@media screen and (max-width: 600px){
+    .movie-rating {
+        top: 42% !important;
+        right: 10%;
+    }
 
+    .movie-stats-text {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 360px){
+    .movie-rating {
+        top: 52% !important;
+        right: 10%;
+    }
+    
+}

@@ -1,0 +1,120 @@
+@import 'variables';
+@import 'animations';
+.movie {
+    margin-top: 130px;
+    background-color: rgba(0,0,0,.5);
+    color: #dee2e6;
+    position: relative;
+    display: grid;
+    grid-template:
+        "image info"
+        "image stat";
+    justify-content: start;
+    grid-template-columns: 300px 1fr;
+    position: relative;
+
+    .movie-title{
+        color: $golden;
+        line-height: 25px;
+        margin-bottom: 0 !important;
+    }
+
+    .movie-info {
+        grid-area: info;
+    }
+    .movie-stat {
+        background-color: rgba(0,0,0,.8);
+        width: 100%;
+        padding: 15px;
+        font-size: 1em;
+        color: #adb5bd;
+        grid-area: stat;
+        align-self: end;
+    }
+
+    .movie-tagline {
+        -webkit-animation: animateOpacity 2s ease;
+        animation: animateOpacity 2s ease;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: $light;
+    }
+    .movie-control{
+        
+    
+        .movie-rating {
+            position: absolute;
+            top: 32%;
+            right: 10%;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid $golden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2px;
+            box-shadow: $box-shadow2;
+        }
+    }
+
+    .btn-secondary{
+        background-color: $golden !important;
+        border: 2px solid $golden !important;
+        outline-color: $golden !important;
+        margin-bottom: 5px;
+    
+        &:focus {
+            outline-color: $golden !important;
+        }
+    }
+
+}
+
+
+
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+.d-flex {
+    display: flex!important;
+}
+
+
+@media screen and (max-width: 1024px){
+    .movie-rating {
+        position: absolute;
+        top: 30%;
+        right: 10%;
+    }
+}
+@media screen and (max-width: 767px){
+    .movie {
+        display: grid;
+        grid-template:
+            "image"
+            "info"
+            "stat";
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .movie-rating {
+        position: absolute;
+        top: 41%;
+        right: 10%;
+    }
+    
+}
+@media screen and (max-width: 380px){
+    .movie-rating {
+        position: absolute;
+        top: 39%;
+        right: 10%;
+    }
+    
+}

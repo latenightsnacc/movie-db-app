@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'animations';
+
+.movie-cast{
+    margin: 20px 0px;
+    background-color: $dark;
+    padding: 30px 0 0 30px;
+    color: $light;
+    h3.cast-title {
+        color: $light !important;
+    }
+}
+.movie-cast-item {
+    margin-bottom: 30px;
+    margin-right: 30px;
+    max-width: 150px;
+    text-align: center;
+    color: $light;
+}
+
+

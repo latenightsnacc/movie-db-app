@@ -1,0 +1,17 @@
+@import 'variables';
+
+.btn-primary {
+    background-color: $dark !important;
+    border: 2px solid $silver !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover, &:focus, &:focus-visible, &:focus-within {
+        outline: none !important;
+    }
+
+}

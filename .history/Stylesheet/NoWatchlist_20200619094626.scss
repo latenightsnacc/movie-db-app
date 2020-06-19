@@ -1,0 +1,11 @@
+@import 'variables'
+
+.card-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px 0px;
+}

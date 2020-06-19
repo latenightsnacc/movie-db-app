@@ -1,0 +1,27 @@
+@import 'variables';
+
+.modal-content{
+    background-color: $dark !important;
+    border: 0px !important;
+    .modal-header {
+        border-bottom: 0px !important;
+    }
+    .input-group-text {
+        background-color: $transparent-bg !important;
+        border: 0;
+        border-bottom: 2px solid $light;
+        border-radius: 0;
+        color: $light;
+        padding: 2px 5px;
+
+        &:focus-within {
+            border: 0;
+            outline: none;
+            outline-color: $transparent-bg !important;
+            border-radius: 0;
+        }
+    }
+    .input-group-text {
+        color: $golden;
+    }
+}

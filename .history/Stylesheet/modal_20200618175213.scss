@@ -1,0 +1,60 @@
+@import 'variables';
+
+.modal-content{
+    background-color: rgba($color: $dark, $alpha: 0.5) !important;
+    border: 1px solid $light !important;
+
+    .modal-header {
+        border-bottom: 0px !important;
+
+        .close, .modal-title {
+            color: $light !important;
+        }
+    }
+    .modal-footer {
+        border-top:0px !important;
+        padding: 5px 0px;
+        .btn-secondary {
+            background-color: $golden !important;
+            color: $dark !important;
+            border: 1px solid $golden !important;
+            border-radius: 20px !important;
+            outline-color: $golden !important;
+
+            &:active {
+                outline-color: $golden !important;
+            }
+        }
+    }
+    .input-group-text {
+        background-color: rgba($color: $dark, $alpha: 0.5) !important;
+        border: 0;
+        border-bottom: 1px solid $light;
+        border-radius: 0;
+        color: $light;
+        padding: 2px 5px;
+
+        &:focus-within {
+            border: 0;
+            outline: none;
+            outline-color: rgba($color: $dark, $alpha: 0.5) !important;
+            border-radius: 0;
+        }
+    }
+    .input-group-text {
+        color: $golden;
+    }
+    .form-control{
+        background-color: rgba($color: $dark, $alpha: 0.5) !important;
+        border: 0px !important;
+        border-bottom: 1px solid $light !important;
+        color: $light !important;
+        &::placeholder{
+            color: $light !important;
+        }
+
+        &:active {
+            outline-color: black !important;
+        }
+    }
+}

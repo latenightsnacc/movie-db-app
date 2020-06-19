@@ -1,0 +1,27 @@
+@import 'variables';
+
+.card-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $light;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px 0px;
+}
+
+.goBtn {
+    margin-top: 20px;
+    background-color: $golden;
+    color: $dark;
+    outline: none;
+    border: 1px solid $golden;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+
+    &:hover {
+        font-weight: 500;
+    }
+}

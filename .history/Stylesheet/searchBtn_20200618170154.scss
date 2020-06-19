@@ -1,0 +1,25 @@
+@import 'variables';
+
+body{
+    position: relative;
+}
+
+#searchBtn.btn-primary {
+    background-color: $dark !important;
+    border: 2px solid $silver !important;
+    position: fixed;
+    right: 1%;
+    top:5%;
+    bottom: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+    &:hover, &:focus, &:active {
+        outline-color: $golden !important;
+    }
+
+}
