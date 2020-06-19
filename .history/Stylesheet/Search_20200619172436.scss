@@ -1,0 +1,62 @@
+@import 'variables';
+
+.uk-modal-dialog {
+    background-color: rgba(0,0,0, 0.5) !important;
+}
+
+.uk-modal-close-full{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.btn-Modal {
+    position: fixed;
+    right: 3%;
+    top: 30%;
+    background-color:  rgba(0,0,0, 0.5) !important;
+    color: $light !important;
+    border: 2px solid $light !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50% !important;
+    outline-color: $light !important;
+    font-weight: 500;
+    padding: 5px;
+
+    &:active, &:hover {
+        outline-color: $light !important;
+        text-decoration: none;
+    }
+}
+
+.input-group-text {
+background-color: rgba($color: $dark, $alpha: 0.5) !important;
+border: 0;
+border-bottom: 1px solid $light;
+border-radius: 0;
+color: $light;
+padding: 2px 5px;
+
+    &:focus-within {
+        border: 0;
+        outline: none;
+        outline-color: rgba($color: $dark, $alpha: 0.5) !important;
+        border-radius: 0;
+    }
+}
+.input-group-text {
+color: $golden;
+}
+.form-control{
+    background-color: rgba($color: $dark, $alpha: 0.5) !important;
+    border: 0px !important;
+    border-bottom: 1px solid $light !important;
+    color: $light !important;
+    &::placeholder{
+        color: $light !important;
+    }
+
+    &:active {
+        outline-color: black !important;
+    }
+}
