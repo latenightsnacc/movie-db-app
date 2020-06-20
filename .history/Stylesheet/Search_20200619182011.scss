@@ -1,12 +1,15 @@
 @import 'variables';
 
-.displaySearch {
-    display: none;
-}
 .searchResults {
     background-color: rgba(0,0,0, 0.5) !important;
-    min-height: 100vh;
 }
+
+.uk-modal-close-full{
+    background-color: transparent !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
 .btn-Modal {
     position: fixed;
     right: 3%;

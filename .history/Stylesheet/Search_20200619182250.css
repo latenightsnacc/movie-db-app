@@ -6,8 +6,6 @@
 .searchResults {
   background-color: rgba(0, 0, 0, 0.5) !important;
   min-height: 100vh;
-  position: fixed;
-  top:10%;
 }
 
 .btn-Modal {

@@ -1180,14 +1180,13 @@ body {
   }
 }
 
-.uk-modal-dialog {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+.displaySearch {
+  display: none;
 }
 
-.uk-modal-close-full {
-  background-color: transparent !important;
-  color: white !important;
-  font-weight: bold !important;
+.searchResults {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  min-height: 100vh;
 }
 
 .btn-Modal {
