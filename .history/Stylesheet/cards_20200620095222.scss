@@ -7,7 +7,7 @@
     height: auto;
     border-radius: 0px;
     width: 200px;
-    transition-timing-function: ease-in;
+
     .card-img{
         height: 300px;
         width: 200px;
@@ -77,7 +77,7 @@
     }
 
     &:hover {
-        transform: translateY(-10px);
+        transform: translateY(-50px);
     }
 }
 

@@ -7,6 +7,8 @@
   height: auto;
   border-radius: 0px;
   width: 200px;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 .card .card-img {
@@ -86,8 +88,8 @@
 }
 
 .card:hover {
-  -webkit-transform: translateY();
-          transform: translateY();
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 @media screen and (max-width: 600px) {
